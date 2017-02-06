@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name LED_Pixel_pcb)(type KiCad)(uri "$(KIPRJMOD)\\lib\\LED_Pixel_pcb.pretty")(options "")(descr ""))
+)
