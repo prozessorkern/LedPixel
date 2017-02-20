@@ -969,17 +969,9 @@ Wire Wire Line
 Wire Wire Line
 	4150 5650 4300 5650
 Wire Wire Line
-	4300 5650 4300 5700
-Wire Wire Line
-	4300 5700 4500 5700
-Wire Wire Line
 	4150 5700 4150 5750
 Wire Wire Line
-	4150 5750 4250 5750
-Wire Wire Line
-	4250 5750 4250 5800
-Wire Wire Line
-	4250 5800 4500 5800
+	4150 5750 4350 5750
 Wire Wire Line
 	5000 7100 5000 6400
 Wire Wire Line
@@ -1814,4 +1806,12 @@ Wire Wire Line
 	2050 3050 1950 3050
 Wire Wire Line
 	5700 1400 5050 1400
+Wire Wire Line
+	4350 5750 4350 5700
+Wire Wire Line
+	4350 5700 4500 5700
+Wire Wire Line
+	4300 5650 4300 5800
+Wire Wire Line
+	4300 5800 4500 5800
 $EndSCHEMATC
