@@ -1,5 +1,6 @@
 # LedPixel
 Small devices to drive up to 10W RGB LEDs by DMX
+There might be a possibility to use them als a LED Wall/Display with extreme high power :)
 
 ## there might be several versions of the pcb (and Firmware)
 * a dev board version with an ATmega8 with USB Bootloader, a dip Switch and some additional Interfaces
