@@ -1,0 +1,28 @@
+Drill report for C:\Projekte\LedPixel\atmega8\pcb\led_pixel\led_pixel.kicad_pcb
+Created on 16.04.2017 22:46:28
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'led_pixel-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0,40mm  0,016"  (184 holes)
+    T2  0,60mm  0,024"  (29 holes)
+    T3  1,02mm  0,040"  (12 holes)
+
+    Total plated holes count 225
+
+
+Drill file 'led_pixel-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  0,90mm  0,035"  (2 holes)
+    T2  0,99mm  0,039"  (3 holes)
+    T3  2,38mm  0,094"  (4 holes)
+    T4  3,20mm  0,126"  (2 holes)
+
+    Total unplated holes count 11
