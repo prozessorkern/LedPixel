@@ -48,15 +48,17 @@ PD7: DMX_DIR
 #include <stdlib.h>
 
 
-unsigned char volatile channel[3] = {0,0,0};
+uint8_t volatile channel[3] = {0,0,0};
 
 int main(void)
 {	
-	int current_byte = 2;
-	char current_bit = -1;
-	int adress;
-	int status = 0;
-
+	int16_t current_byte = 2;
+	uint8_t current_bit = -1;
+	int16_t adress;
+	int16_t status = 0;
+	uint16_t counter = 0;
+	uint8_t color = 0;
+	uint8_t color_counter = 0;
 
 	DDRB = 0b00011100;
 	PORTB = 0b000000000;
@@ -84,6 +86,69 @@ int main(void)
 	
 	/*! - enable interrupts for soft - pwm */
 	sei();
+	
+	while(!(UCSRA & (1<<RXC)))
+	{
+		counter ++;
+		if(counter > 13000)
+		{
+			counter = 0;
+			
+			if(color_counter < 255)
+			{
+				color_counter ++;
+			}
+			else
+			{
+				color_counter = 0;
+				color ++;
+				channel[0] = 0;
+				channel[1] = 0;
+				channel[2] = 0;
+			}
+			
+			if(!(color & 0x07))
+			{
+				color ++;
+				channel[0] = 0;
+				channel[1] = 0;
+				channel[2] = 0;
+			}
+			
+			if(color & 0b00000001u)
+			{
+				channel[0] ++;
+			}
+			else
+			{
+				channel[0] = 0u;
+			}
+			
+			if(color & 0b00000010u)
+			{
+				channel[1] ++;
+			}
+			else
+			{
+				channel[1] = 0u;
+			}
+			
+			if(color & 0b00000100u)
+			{
+				channel[2] ++;
+			}
+			else
+			{
+				channel[2] = 0u;
+			}
+
+		}			
+			
+	}
+	
+	channel[0] = 0;
+	channel[1] = 0;
+	channel[2] = 0;
 	
     while(1)
     {
@@ -145,7 +210,7 @@ int main(void)
 /* Timer interrupt handler for soft pwm */
 ISR(TIMER1_COMPA_vect){
 	
-	static char counter = 0;
+	static uint8_t counter = 0;
 
 	/*! - overflow detected */
 	if(counter > 254){
