@@ -1,7 +1,7 @@
 "ID";"Bezeichner";"Gehäuse";"Stückzahl";"Bezeichnung";"Anbieter und Ref.";
-1;"Y1";"Crystal_SMD_HC49-SD_HandSoldering";1;"CRYSTAL";;;
-2;"L3,L2,L1";"Choke_SMD_4.5x4x3.2";3;"68u";;;
-3;"D6";"LED_SMD_RGB_3W";1;"LED_RGB";;;
+1;"D6";"LED_SMD_RGB_3W";1;"LED_RGB";;;
+2;"Y1";"Crystal_SMD_HC49-SD_HandSoldering";1;"CRYSTAL";;;
+3;"L3,L2,L1";"Choke_SMD_4.5x4x3.2";3;"68u";;;
 4;"REF**,REF**";"MountingHole_3.2mm_M3_DIN965";2;"MountingHole_3.2mm_M3_DIN965";;;
 5;"REF***";"OSHW-Logo2_7.3x6mm_Copper";1;"OSHW-Logo2_7.3x6mm_Copper";;;
 6;"REF***";"WEEE-Logo_4.2x6mm_SilkScreen";1;"WEEE-Logo_4.2x6mm_SilkScreen";;;

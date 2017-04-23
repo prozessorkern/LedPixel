@@ -1,4 +1,4 @@
-update=20.02.2017 16:54:58
+update=23.04.2017 16:41:33
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -135,3 +133,15 @@ LibName103=C:/Projekte/KiCadLibs/schematic/proz_stm
 LibName104=C:/Projekte/KiCadLibs/schematic/proz_switches
 LibName105=C:/Projekte/KiCadLibs/schematic/proz_trans
 LibName106=C:/Projekte/KiCadLibs/schematic/proz_util
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=doc
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
+[general]
+version=1
