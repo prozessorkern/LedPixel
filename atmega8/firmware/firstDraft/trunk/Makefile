@@ -1,5 +1,5 @@
 DEVICE  	:= atmega8
-CFLAGS  	:= -Iinc -Wall -O0 $(CFLAGS) -mmcu=$(DEVICE)
+CFLAGS  	:= -Iinc -Wall -Os $(CFLAGS) -mmcu=$(DEVICE)
 C_SRC		:= main.c
 SRC_PATH	:= ./src/
 OBJ_PATH	:= ./obj/
@@ -29,11 +29,11 @@ flash: all
 	$(AVRDUDE) -c $(PROGRAMMER) -p $(DEVICE) -U flash:w:$(CURDIR)/$(OUT_PATH)$(TARGET).hex:i
 	
 # Generic rule for compiling C files:
-%.o: %.c
+%.o: %.c Makefile
 	@echo !!! calling Compiler for $@
 	$(CC) $(CFLAGS) -c $< -o $(OBJ_PATH)$@
 
 # Generic rule for assembling Assembler source files:
-%.o: %.S
+%.o: %.S Makefile
 	@echo !!! calling Assembler for $@
 	$(CC) $(CFLAGS) -x assembler-with-cpp -c $< -o $@
