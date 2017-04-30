@@ -2,3 +2,4 @@ atmega8/firmware/firstDraft/trunk/obj/main.o
 atmega8/firmware/firstDraft/trunk/out/firstDraft.elf
 atmega8/firmware/firstDraft/trunk/out/firstDraft.hex
 *.bak
+stm32f030/pcb/led_pixel_stm32f030/led_pixel_stm32f030.kicad_pcb-bak
