@@ -953,4 +953,44 @@ Wire Wire Line
 Wire Wire Line
 	3300 2700 3350 2700
 Connection ~ 3300 2900
+$Comp
+L Screw_Terminal_1x01 M1
+U 1 1 59079FB2
+P 10450 4100
+F 0 "M1" H 10370 4054 50  0000 R CNN
+F 1 "mounting hole" H 10370 4145 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 10450 3975 50  0001 C CNN
+F 3 "" H 10450 4000 50  0001 C CNN
+	1    10450 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Screw_Terminal_1x01 M2
+U 1 1 5907B01E
+P 10450 4300
+F 0 "M2" H 10370 4254 50  0000 R CNN
+F 1 "mounting hole" H 10370 4345 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad_Via" H 10450 4175 50  0001 C CNN
+F 3 "" H 10450 4200 50  0001 C CNN
+	1    10450 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5907B64D
+P 10200 4400
+F 0 "#PWR?" H 10200 4150 50  0001 C CNN
+F 1 "GND" H 10205 4227 50  0000 C CNN
+F 2 "" H 10200 4400 50  0000 C CNN
+F 3 "" H 10200 4400 50  0000 C CNN
+	1    10200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 4400 10200 4100
+Wire Wire Line
+	10200 4100 10250 4100
+Wire Wire Line
+	10250 4300 10200 4300
+Connection ~ 10200 4300
 $EndSCHEMATC
