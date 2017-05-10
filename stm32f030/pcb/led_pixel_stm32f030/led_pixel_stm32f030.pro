@@ -1,4 +1,4 @@
-update=23.04.2017 21:58:09
+update=10.05.2017 16:43:22
 version=1
 last_client=kicad
 [pcbnew]
@@ -83,3 +83,13 @@ LibName51=C:/Projekte/KiCadLibs/schematic/proz_switches
 LibName52=C:/Projekte/KiCadLibs/schematic/proz_trans
 LibName53=C:/Projekte/KiCadLibs/schematic/proz_util
 LibName54=stm32
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=doc/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1

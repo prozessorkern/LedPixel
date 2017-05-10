@@ -1,4 +1,4 @@
-(kicad_pcb (version 20170123) (host pcbnew "(2017-04-22 revision b38541345)-makepkg")
+(kicad_pcb (version 20170123) (host pcbnew "(2017-05-08 revision d4e41c4f9)-makepkg")
 
   (general
     (links 152)
@@ -13,6 +13,13 @@
   )
 
   (page A4)
+  (title_block
+    (title led_pixel_atmega8)
+    (date 2017-05-10)
+    (rev 1.0)
+    (company shimatta)
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -73,9 +80,9 @@
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions true)
-      (excludeedgelayer false)
+      (excludeedgelayer true)
       (linewidth 0.100000)
-      (plotframeref true)
+      (plotframeref false)
       (viasonmask false)
       (mode 1)
       (useauxorigin false)
@@ -89,11 +96,11 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
-      (outputformat 4)
+      (outputformat 1)
       (mirror false)
-      (drillshape 2)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory doc))
+      (outputdirectory gerber))
   )
 
   (net 0 "")
