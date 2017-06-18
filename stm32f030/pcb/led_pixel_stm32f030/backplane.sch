@@ -60,8 +60,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "Led Pixel Backplane connection"
-Date "2017-04-30"
-Rev "00"
+Date "2017-06-18"
+Rev "1.1"
 Comp "shimatta"
 Comment1 ""
 Comment2 ""

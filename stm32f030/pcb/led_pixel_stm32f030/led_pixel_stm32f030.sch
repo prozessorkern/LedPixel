@@ -60,8 +60,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "Led Pixel With a STM32F030 Controller and dynamic adressing"
-Date "2017-04-23"
-Rev "1.0"
+Date "2017-06-18"
+Rev "1.1"
 Comp "shimatta"
 Comment1 ""
 Comment2 ""
@@ -976,10 +976,10 @@ F 3 "" H 10450 4200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR027
 U 1 1 5907B64D
 P 10200 4400
-F 0 "#PWR?" H 10200 4150 50  0001 C CNN
+F 0 "#PWR027" H 10200 4150 50  0001 C CNN
 F 1 "GND" H 10205 4227 50  0000 C CNN
 F 2 "" H 10200 4400 50  0000 C CNN
 F 3 "" H 10200 4400 50  0000 C CNN
