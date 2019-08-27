@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name led_pixel_stm32f030_cree-rescue)(type Legacy)(uri ${KIPRJMOD}/led_pixel_stm32f030_cree-rescue.lib)(options "")(descr ""))
+)
